@@ -2,6 +2,12 @@
 
 API sederhana berbasis Node.js dan Express untuk mengelola data menu restoran (Sate & Minuman Tradisional). API ini mendukung pencarian produk, kategori, informasi harga, rating, dan ketersediaan stok.
 
+### 🔗 Public Endpoint
+
+> te-sate-api.vercel.app
+
+---
+
 ## 🚀 Fitur Utama
 
 - **Endpoint Terpisah**: Akses khusus makanan, minuman, atau semua menu.
