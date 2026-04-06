@@ -231,6 +231,21 @@ app.get("/api/menu/foods/:id", (req, res) => {
   res.status(200).json({ success: true, data: item });
 });
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "API Menu Restoran aktif 🚀",
+    endpoints: {
+      all: "/api/menu",
+      foods: "/api/menu/foods",
+      beverages: "/api/menu/beverages",
+      search: "/api/menu/search?q=keyword",
+      detail_food: "/api/menu/foods/:id",
+      detail_beverage: "/api/menu/beverages/:id",
+    },
+  });
+});
+
 // GET detail beverage by id
 app.get("/api/menu/beverages/:id", (req, res) => {
   const id = parseInt(req.params.id);
